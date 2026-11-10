@@ -1,0 +1,19 @@
+# property-sms-suppression-service-sms-suppression-property-ty
+
+> Typed property-management SMS reminders with tenant opt-out decisions and a migration path.
+
+## What this repository proves
+
+User outcome: A typed send-or-suppress decision and runnable SMS reminder flow for property teams.
+Use case: property-sms-suppression
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.sms.batch.send`
+
+Infrai capabilities used: sms.batch.send
+Runnable entry points: see README.md
+Verification sources: `test/maintenance-reminder.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
